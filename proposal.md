@@ -2,7 +2,7 @@
 
 Members on the team: Fizza Arif, Anthea Gonzalez, Zachary Fleck, Sofia Martinez
 
-Type of Booking System:
+Type of Booking System: Movie Ticket Booking System
 
 Shared Team Github Repo URL:
 
