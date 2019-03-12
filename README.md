@@ -7,4 +7,4 @@
 # Primary Strengths: file organization, working through unexpected problems, coding fundamentals
 
 # Fizza Arif
-# Primary Strengths: semantic HTML, CSS, organization structure, fixing linter errors 
+# Primary Strengths: semantic HTML, CSS, organization structure, fixing linter errors
