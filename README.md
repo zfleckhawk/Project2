@@ -8,3 +8,9 @@
 
 # Fizza Arif
 # Primary Strengths: semantic HTML, CSS, organization structure, fixing linter errors
+<<<<<<< HEAD
+=======
+
+# Zachary Fleck
+# Primary Strengths: back-end development, server side, organization
+>>>>>>> f5f635a3a7ff2ad8a0439e0e9b7304fb5620a875
