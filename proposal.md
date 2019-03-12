@@ -1,6 +1,6 @@
 #Project 2 Proposal
 
-Members on the team:
+Members on the team: Fizza Arif, Anthea Gonzalez, Zachary Fleck, Sofia Martinez
 
 Type of Booking System:
 
@@ -11,4 +11,4 @@ Sofia's fork of the shared Repo URL:
 Anthea's fork of the shared Repo URL:
 Zach's fork of the shared Repo URL:
 
-Project Management/Communication app being used: 
+Project Management/Communication app being used:
