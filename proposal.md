@@ -6,7 +6,12 @@ Fizza Arif, Anthea Gonzalez, Zachary Fleck, Sofia Martinez
 # Type of Booking System:
 Movie Ticket Booking System
 
-# Shared Team Github Repo URL: 
+This Ticket booking system would be for multiple theaters.
+The user would first pick the location of the theatre, than pick the movie, the
+time of the movie, number of tickets and than their choice of seats.  
+They will than be able to pay for the tickets through a credit or debit card.
+
+# Shared Team Github Repo URL:
 https://github.com/dunder-mifflin-scranton/Project2
 
 # Members Shared Repos
