@@ -15,11 +15,28 @@ html {
   padding: 0 1em; /* 16px = 1em */
 }
 
-h1, h2{
+h1, h2 {
   padding: 0 0 0 0;
   font-weight: bold;
 }
 
 a {
   text-decoration: none;
+}
+
+.purchase-button,
+.pages a {
+  background: #258088;
+  border: 0.125em solid white; /* 2px / 16px = 0.125em */
+  color: white;
+  display: block;
+  font-size: 1.125em;
+  padding: 0.5em; /* 8px / 16px = 0.5em */
+  /* change width */
+}
+
+.pages {
+  display: flex;
+  flex-flow: row;
+  justify-content: right;
 }
