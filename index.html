@@ -6,10 +6,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
   <link rel="stylesheet" href="screen.css" />
 </head>
-
 <body>
-
   <header>
+      <!--Navigation Section-->
       <nav id="navigation">
         <ul class="pages">
           <li><a href="">Home</a></li>
@@ -17,15 +16,15 @@
           <li><a href="Extras/">Extras</a></li>
         </ul>
       </nav>
-    </header>
-
+  </header>
   <main>
-    <h1>Tech Yeah Cinemas</h1>
+    <h1 id="cinema-name">Tech Yeah Cinemas</h1>
+    <!--Movie Options Section-->
     <section>
-      <h2>Featured Movies</h2>
-      <ul>
-        <li>
-          <figure class="image">
+      <h2 class="section-title">Featured Movies</h2>
+      <ul class="list">
+        <li class="movie-option">
+          <figure>
             <img src="../assets/dumbo.jpg" alt="Photo of Dumbo Poster." />
             <figcaption>
               <ul>
@@ -34,15 +33,14 @@
                     <li>Duration: 1 HR 55 MIN</li>
                     <li>Rating: PG</li>
                     <li>Released: Mar 29, 2019</li>
-                    <li>Get Tickets</li>
+                    <li class="purchase-button">Get Tickets</li>
                   </ul>
                 </li>
               </ul>
             </figcaption>
           </figure>
         </li>
-
-        <li>
+        <li class="movie-option">
           <figure class="image">
             <img src="../assets/Us.jpg" alt="Photo of Us Poster." />
             <figcaption>
@@ -52,15 +50,14 @@
                     <li>Duration: 1 HR 56 MIN</li>
                     <li>Rating: R</li>
                     <li>Released: Mar 22, 2019</li>
-                    <li>Get Tickets</li>
+                    <li class="purchase-button">Get Tickets</li>
                   </ul>
                 </li>
               </ul>
             </figcaption>
           </figure>
         </li>
-
-        <li>
+        <li class="movie-option">
           <figure class="image">
             <img src="../assets/Shrek2.jpg" alt="Photo of Shrek 2 Poster." />
             <figcaption>
@@ -70,7 +67,7 @@
                     <li>Duration: 1 HR 45 MIN</li>
                     <li>Rating: PG</li>
                     <li>Released: May 19, 2004</li>
-                    <li>Get Tickets</li>
+                    <li class="purchase-button">Get Tickets</li>
                   </ul>
                 </li>
               </ul>
@@ -80,8 +77,6 @@
       </ul>
     </section>
   </main>
-
 <script src="site.js"></script>
-
 </body>
 </html>

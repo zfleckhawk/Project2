@@ -7,3 +7,36 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+
+html {
+  font-size: 1.125em; /* 18px / 16px = 1.125em */
+  font-family: Helvetica, sans-serif;
+  line-height: 1.5em; /* 24px / 16px */
+  padding: 0 1em; /* 16px = 1em */
+}
+
+h1, h2 {
+  padding: 0 0 0 0;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.purchase-button,
+.pages a {
+  background: #258088;
+  border: 0.125em solid white; /* 2px / 16px = 0.125em */
+  color: white;
+  display: block;
+  font-size: 1.125em;
+  padding: 0.5em; /* 8px / 16px = 0.5em */
+  /* change width */
+}
+
+.pages {
+  display: flex;
+  flex-flow: row;
+  justify-content: right;
+}
