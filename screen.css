@@ -16,7 +16,7 @@ html {
   padding: 0 1em; /* 16px = 1em */
 }
 
-h1, h2 {
+h1, h2, h3 {
   padding: 0 0 0 0;
   font-weight: bold;
 }
@@ -40,6 +40,11 @@ a {
   font-size: 1.6875em; /* 27px / 16px = 1.6875em */
   /* T R B L */
   padding: 0 0 0.5em 0; /* 8px / 16px = 0.5em */
+}
+
+.movie-title {
+  color: #8F52AE;
+  font-size: 1.6875em; /* 27px / 16px = 1.6875em */
 }
 
 .purchase-button {
