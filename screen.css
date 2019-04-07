@@ -77,6 +77,12 @@ a {
 }
 
 .movie-poster {
-  width: 20%;
+  height: 50vh;
+}
+
+.main-list {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
 }
 /*-----State (repeat the structure above; media queries, JavaScript-dependent styles)-----*/
