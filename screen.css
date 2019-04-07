@@ -73,7 +73,14 @@ a {
 
 .dumbo,
 .us,
-.shrek {
+.shrek,
+.shazam,
+.petsemetary,
+.bestofenemies,
+.captainmarvel,
+.fivefeetapart,
+.unplanned,
+.wonderpark {
   width: 20%;
 }
 /*-----State (repeat the structure above; media queries, JavaScript-dependent styles)-----*/
