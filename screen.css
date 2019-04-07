@@ -16,10 +16,6 @@ html {
   padding: 0 1em; /* 16px = 1em */
 }
 
-
-/*-----Layout (id selectors; width/height, position, flexbox, grid)-----*/
-
-/*-----Module/Modular (class or descendent selectors; repeating specific styles)-----*/
 h1, h2 {
   padding: 0 0 0 0;
   font-weight: bold;
@@ -27,17 +23,37 @@ h1, h2 {
 
 a {
   text-decoration: none;
+  color: white;
+}
+
+/*-----Layout (id selectors; width/height, position, flexbox, grid)-----*/
+#cinema-name {
+  color: #3C3A9C;
+  font-size: 3.375em; /* 54px / 16px = 3.375em */
+  /* T R B L */
+  padding: 0.5em 0  0.5em 0;
+}
+
+/*-----Module/Modular (class or descendent selectors; repeating specific styles)-----*/
+.section-title {
+  color: #6160B6;
+  font-size: 1.6875em; /* 54px / 16px = 3.375em */
+  /* T R B L */
+  padding: 0 0  0.5em 0;
 }
 
 .purchase-button,
 .pages a {
   background: #258088;
-  border: 0.125em solid white; /* 2px / 16px = 0.125em */
   color: white;
   display: block;
   font-size: 1.125em;
   padding: 0.5em; /* 8px / 16px = 0.5em */
-  /* change width */
+  /* TO-DO: change width */
+}
+
+.pages a {
+  border: 0.125em solid white; /* 2px / 16px = 0.125em */
 }
 
 .pages {
