@@ -42,7 +42,15 @@ a {
   padding: 0 0 0.5em 0; /* 8px / 16px = 0.5em */
 }
 
-.purchase-button,
+.purchase-button {
+  background: #258088;
+  color: white;
+  display: inline-block;
+  font-size: 1.125em;
+  padding: 0.625em; /* 8px / 16px = 0.5em */
+  /* TO-DO: change width */
+}
+
 .pages a {
   background: #258088;
   color: white;
@@ -50,9 +58,6 @@ a {
   font-size: 1.125em;
   padding: 0.625em; /* 8px / 16px = 0.5em */
   /* TO-DO: change width */
-}
-
-.pages a {
   border: 0.25em solid white; /* 2px / 16px = 0.125em */
 }
 
@@ -62,4 +67,13 @@ a {
   justify-content: right;
 }
 
+.movie-option {
+  display: block;
+}
+
+.dumbo,
+.us,
+.shrek {
+  width: 20%;
+}
 /*-----State (repeat the structure above; media queries, JavaScript-dependent styles)-----*/
