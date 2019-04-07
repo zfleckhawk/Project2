@@ -31,15 +31,15 @@ a {
   color: #3C3A9C;
   font-size: 3.375em; /* 54px / 16px = 3.375em */
   /* T R B L */
-  padding: 0.5em 0  0.5em 0;
+  padding: 0.5em 0 0.5em 0; /* 8px / 16px = 0.5em */
 }
 
 /*-----Module/Modular (class or descendent selectors; repeating specific styles)-----*/
 .section-title {
   color: #6160B6;
-  font-size: 1.6875em; /* 54px / 16px = 3.375em */
+  font-size: 1.6875em; /* 27px / 16px = 1.6875em */
   /* T R B L */
-  padding: 0 0  0.5em 0;
+  padding: 0 0 0.5em 0; /* 8px / 16px = 0.5em */
 }
 
 .purchase-button,
