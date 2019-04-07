@@ -76,16 +76,7 @@ a {
   display: block;
 }
 
-.dumbo,
-.us,
-.shrek,
-.shazam,
-.petsemetary,
-.bestofenemies,
-.captainmarvel,
-.fivefeetapart,
-.unplanned,
-.wonderpark {
+.movie-poster {
   width: 20%;
 }
 /*-----State (repeat the structure above; media queries, JavaScript-dependent styles)-----*/
