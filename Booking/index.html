@@ -23,12 +23,20 @@
 
             <li>
               <label for="date">Date</label>
-              <input type="text" name="date" id="date" />
+              <input type="date" name="date" id="date" />
             </li>
 
             <li>
-              <label for="time">Time</label>
-              <input type="text" name="time" id="time" />
+              <label for="time">Show Time</label>
+              <select name="time" id="time">
+                <option>10:00 AM</option>
+                <option>12:00 PM</option>
+                <option>2:00 PM</option>
+                <option>4:00 PM</option>
+                <option>6:00 PM</option>
+                <option>8:00 PM</option>
+                <option>10:00 PM</option>
+              </select>
             </li>
 
             <li>
@@ -48,9 +56,14 @@
             </li>
 
             <li>
+              <label for="email">Enter your Email</label>
+              <input type="text" name="email" id="email" />
+            </li>
+
+            <!--<li>
               <label for="seats">Choose your Seat(s)</label>
               <input type="text" name="seats" id="seats" />
-            </li>
+            </li>-->
 
             <li>
               <input type="submit" name="submit" id="submit" value="Submit" />
@@ -60,7 +73,7 @@
         </form>
   </main>
 
-<script src="site.js"></script>
+<script type="text/javascript" src="../site.js"></script>
 
 </body>
 </html>
