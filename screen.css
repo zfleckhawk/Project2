@@ -26,12 +26,41 @@ a {
   color: white;
 }
 
+input, label, select {
+  display: block;
+  box-sizing: border-box;
+}
+
+input,
+select {
+  padding: 1.2222222222222em; /* 22px / 18 px = 1.2222222222222em */
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+  border: 0;
+  outline: 0;
+  width: 100%;
+}
+
+input[type="date"],
+input[type="email"],
+input[type="submit"],
+select {
+  margin-bottom: 0.61111111em; /* 11px / 18px = 0.61111111em */
+  background-color: rgba(37,128,136,1);
+  color: white
+}
+
+input[type="submit"]:disabled {
+  background-color: rgba(37,128,136,0.3);
+}
+
 /*-----Layout (id selectors; width/height, position, flexbox, grid)-----*/
 #cinema-name {
   color: #3C3A9C;
-  font-size: 3.375em; /* 54px / 16px = 3.375em */
+  font-size: 1.6875em; /* 27px / 16px = 1.6875em */
   /* T R B L */
-  padding: 0.5em 0 0.5em 0; /* 8px / 16px = 0.5em */
+  padding: 0 0 0 0; /* 8px / 16px = 0.5em */
 }
 
 /*-----Module/Modular (class or descendent selectors; repeating specific styles)-----*/
@@ -88,9 +117,16 @@ a {
 }
 
 /*-----State (repeat the structure above; media queries, JavaScript-dependent styles)-----*/
+@media all and (min-width: 603px) {
+  #cinema-name {
+    font-size: 3.375em; /* 54px / 16px = 3.375em */
+    padding: 0.5em 0 0.5em 0; /* 8px / 16px = 0.5em */
+  }
+}
 @media all and (min-width: 800px) {
   .main-list {
     display: flex;
     flex-flow: row;
     justify-content: space-evenly;
   }
+}
