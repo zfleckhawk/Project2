@@ -29,6 +29,7 @@
     return validate(email, /^[^@\s]+@[^@\s]+.[^@\s]+$/g);
 }
 
+
   document.addEventListener('DOMContentLoaded', function() {
     var form = document.querySelector('#form');
     var submit = document.querySelector('#submit');
@@ -45,6 +46,7 @@
         document.querySelector('#submit').style.cursor = "default";
       }
 });
+
   });
 
 }());
