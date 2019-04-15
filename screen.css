@@ -10,6 +10,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /*-----Base Styles (element selectors; color, typography)-----*/
 html {
+  background-color: #05000f;
+  color: #ffffff;
   font-size: 1.125em; /* 18px / 16px = 1.125em */
   font-family: Helvetica, sans-serif;
   line-height: 1.5em; /* 24px / 16px */
@@ -92,7 +94,7 @@ input[type="submit"]:disabled {
   font-size: 1.125em;
   padding: 0.625em; /* 8px / 16px = 0.5em */
   /* TO-DO: change width */
-  border: 0.25em solid white; /* 2px / 16px = 0.125em */
+  border: 0.25em solid #05000f; /* 2px / 16px = 0.125em */
 }
 
 .pages {
