@@ -27,16 +27,16 @@
               <input type="date" name="date" id="date" />
             </li>
 
-            <li>
+            <li id="time-area">
               <label for="time">Show Time</label>
               <select name="time" id="time">
-                <option>10:00 AM</option>
-                <option>12:00 PM</option>
-                <option>2:00 PM</option>
-                <option>4:00 PM</option>
-                <option>6:00 PM</option>
-                <option>8:00 PM</option>
-                <option>10:00 PM</option>
+                <option value="10am">10:00 AM</option>
+                <option value="12pm">12:00 PM</option>
+                <option value="2pm">2:00 PM</option>
+                <option value="4pm">4:00 PM</option>
+                <option value="6pm">6:00 PM</option>
+                <option value="8pm">8:00 PM</option>
+                <option value="10pm">10:00 PM</option>
               </select>
             </li>
 
@@ -66,15 +66,26 @@
               <input type="text" name="seats" id="seats" />
             </li>-->
 
-            <li>
+            <li id="submit-area">
               <input type="submit" name="submit" id="submit" value="Submit" />
             </li>
           </ol>
 
         </form>
   </main>
+  <template id="time-touch-template">
+    <ul id="time-touch">
+      <li><a href="#null" data-size="10am" role="button">10:00 AM</a></li>
+      <li><a href="#null" data-size="12pm" role="button">12:00 PM</a></li>
+      <li><a href="#null" data-size="2pm" role="button">2:00 PM</a></li>
+      <li><a href="#null" data-size="4pm" role="button">4:00 PM</a></li>
+      <li><a href="#null" data-size="6pm" role="button">6:00 PM</a></li>
+      <li><a href="#null" data-size="8pm" role="button">8:00 PM</a></li>
+      <li><a href="#null" data-size="10pm" role="button">10:00 PM</a></li>
+    </ul>
+  </template>
 
-<script type="text/javascript" src="../site.js"></script>
+<script src="../site.js"></script>
 
 </body>
 </html>
