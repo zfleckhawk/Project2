@@ -104,7 +104,7 @@ input[type="submit"]:disabled {
 }
 
 .movie-option {
-  display: block;
+  display: inline-block;
 }
 
 .movie-poster {
