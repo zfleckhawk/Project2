@@ -31,7 +31,7 @@
 
 
   document.addEventListener('DOMContentLoaded', function() {
-    var form = document.querySelector('#form');
+    var form = document.querySelector('#pay-form');
     var submit = document.querySelector('#submit');
     var input_email = document.querySelector('#email');
 
