@@ -6,72 +6,68 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
   <link rel="stylesheet" href="../screen.css" />
 </head>
-
 <body>
-
   <main>
     <h2 class="section-title">Book Tickets</h2>
+    <!--Beginning of Ticket Booking Form-->
     <form action="#null" method="get" id="form">
-          <ol>
-            <li>
-              <label for="location">Theatre Location</label>
-              <select name="location" id="location">
-                <option>3454 N. Sofia Ave, Chicago IL 68634</option>
-                <option>9456 W. Anthea Ave, Chicago IL, 67895</option>
-                <option>2465 E. Zach Ave, Chicago IL, 76854</option>
-              </select>
-            </li>
-
-            <li>
-              <label for="date">Date</label>
-              <input type="date" name="date" id="date" />
-            </li>
-
-            <li id="time-area">
-              <label for="time">Show Time</label>
-              <select name="time" id="time">
-                <option value="10am">10:00 AM</option>
-                <option value="12pm">12:00 PM</option>
-                <option value="2pm">2:00 PM</option>
-                <option value="4pm">4:00 PM</option>
-                <option value="6pm">6:00 PM</option>
-                <option value="8pm">8:00 PM</option>
-                <option value="10pm">10:00 PM</option>
-              </select>
-            </li>
-
-            <li>
-              <label for="tickets">Number of Tickets</label>
-              <select name="tickets" id="tickets">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-              </select>
-            </li>
-
-            <li>
-              <label for="email">Enter your Email</label>
-              <input type="email" name="email" id="email" />
-            </li>
-
-            <!--<li>
-              <label for="seats">Choose your Seat(s)</label>
-              <input type="text" name="seats" id="seats" />
-            </li>-->
-
-            <li id="submit-area">
-              <input type="submit" name="submit" id="submit" value="Next" formaction="../payment/" />
-            </li>
-          </ol>
-
-        </form>
+      <ol>
+        <!--Location-->
+        <li>
+          <label for="location">Theatre Location</label>
+          <select name="location" id="location">
+            <option>3454 N. Sofia Ave, Chicago IL 68634</option>
+            <option>9456 W. Anthea Ave, Chicago IL, 67895</option>
+            <option>2465 E. Zach Ave, Chicago IL, 76854</option>
+          </select>
+        </li>
+        <!--Date-->
+        <li>
+          <label for="date">Date</label>
+          <input type="date" name="date" id="date" />
+        </li>
+        <!--Time-->
+        <li id="time-area">
+          <label for="time">Show Time</label>
+          <select name="time" id="time">
+            <option value="10am">10:00 AM</option>
+            <option value="12pm">12:00 PM</option>
+            <option value="2pm">2:00 PM</option>
+            <option value="4pm">4:00 PM</option>
+            <option value="6pm">6:00 PM</option>
+            <option value="8pm">8:00 PM</option>
+            <option value="10pm">10:00 PM</option>
+          </select>
+        </li>
+        <!--Number of Tickets-->
+        <li>
+          <label for="tickets">Number of Tickets</label>
+          <select name="tickets" id="tickets">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </li>
+        <li>
+          <label for="email">Enter your Email</label>
+          <input type="email" name="email" id="email" />
+        </li>
+        <!--<li>
+          <label for="seats">Choose your Seat(s)</label>
+        </li>-->
+        <!--Submit-->
+        <li id="submit-area">
+          <input type="submit" name="submit" id="submit" value="Next" formaction="../payment/" />
+        </li>
+      </ol>
+    </form>
   </main>
   <template id="time-touch-template">
     <ul id="time-touch">
@@ -84,8 +80,6 @@
       <li><a href="#null" data-size="10pm" role="button">10:00 PM</a></li>
     </ul>
   </template>
-
 <script src="../site.js"></script>
-
 </body>
 </html>
