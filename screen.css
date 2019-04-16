@@ -47,6 +47,7 @@ select {
 input[type="date"],
 input[type="email"],
 input[type="submit"],
+input[type="tel"],
 select {
   margin-bottom: 0.61111111em; /* 11px / 18px = 0.61111111em */
   background-color: rgba(37,128,136,1);

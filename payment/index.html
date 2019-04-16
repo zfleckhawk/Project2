@@ -8,11 +8,36 @@
 </head>
 
 <body>
-
   <main>
-
+    <form action="#null" method="get" id="pay-form">
+      <ol>
+        <!--Credit Card-->
+        <li>
+          <label for="credit">Credit Card Number</label>
+          <input type="tel" name="credit" id="credit" />
+        </li>
+        <!--security code-->
+        <li>
+          <label for="code">Credit Card Security Number</label>
+          <input type="tel" name="code" id="code" />
+        </li>
+        <!--Credit card expiration-->
+        <li>
+          <label for="expire">Card Expiration</label>
+          <input type="tel" name="expire" id="expire" />
+        </li>
+        <!--Email for Reciept-->
+        <li>
+          <label for="email">Enter your email for receipt</label>
+          <input type="email" name="email" id="email" />
+        </li>
+        <!--Submit-->
+        <li id="submit-area">
+          <input type="submit" name="submit" id="submit" value="Submit" formaction="../payment/" />
+        </li>
+      </ol>
+    </form>
   </main>
-
 <script src="site.js"></script>
 
 </body>
