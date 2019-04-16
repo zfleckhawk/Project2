@@ -70,7 +70,8 @@ input[type="submit"]:disabled {
   color: #6160B6;
   font-size: 1.6875em; /* 27px / 16px = 1.6875em */
   /* T R B L */
-  padding: 0 0 0 0; /* 8px / 16px = 0.5em */
+  padding: 0.625em 0 0.625em 0; /* 8px / 16px = 0.5em */
+
 }
 
 .movie-title {
@@ -122,10 +123,15 @@ input[type="submit"]:disabled {
 @media all and (min-width: 603px) {
   #cinema-name {
     font-size: 3.375em; /* 54px / 16px = 3.375em */
-    padding: 0.5em 0 0.5em 0; /* 8px / 16px = 0.5em */
+    padding: 0.5em 0 0 0; /* 8px / 16px = 0.5em */
   }
 }
+
 @media all and (min-width: 800px) {
+  #cinema-name {
+    padding: 0 0 0 0;
+  }
+
   .main-list {
     display: flex;
     flex-flow: row;
@@ -137,5 +143,10 @@ input[type="submit"]:disabled {
   .movie-title {
     color: #8F52AE;
     font-size: 1.25em; /* 20px / 16px = 1.25em */
+  }
+
+  input,
+  select {
+    width: 50vw;
   }
 }
