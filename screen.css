@@ -104,7 +104,7 @@ input[type="submit"]:disabled {
 }
 
 .movie-option {
-  display: block;
+  display: inline-block;
 }
 
 .movie-poster {
@@ -130,5 +130,12 @@ input[type="submit"]:disabled {
     display: flex;
     flex-flow: row;
     justify-content: space-evenly;
+  }
+}
+
+@media all and (min-width: 1060px) {
+  .movie-title {
+    color: #8F52AE;
+    font-size: 1.25em; /* 20px / 16px = 1.25em */
   }
 }
