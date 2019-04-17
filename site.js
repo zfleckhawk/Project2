@@ -14,6 +14,20 @@
     return value.replace(/\s/g, '');
   }
 
+  // Debounce function to limit calls on repeated events
+  // See for e.g., https://codeburst.io/throttling-and-debouncing-in-javascript-b01cad5c8edf
+  var debounce = function debounce(func, delay) {
+    var inDebounce;
+    return function () {
+      var context = this;
+      var args = arguments;
+      clearTimeout(inDebounce);
+      inDebounce = setTimeout(function () {
+        return func.apply(context, args);
+      }, delay);
+    };
+  };
+
   function validate(value, check, condition) {
     if (eq(typeof(check.test), 'function')) {
       return check.test(value);
@@ -28,7 +42,6 @@
     var email = whitespace(value);
     return validate(email, /^[^@\s]+@[^@\s]+.[^@\s]+$/g);
 }
-
 
   document.addEventListener('DOMContentLoaded', function() {
     var form = document.querySelector('#pay-form');
