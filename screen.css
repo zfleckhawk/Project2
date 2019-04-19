@@ -58,6 +58,16 @@ input[type="submit"]:disabled {
   background-color: rgba(37,128,136,0.3);
 }
 
+input[type=checkbox] {
+   display: none;
+ }
+
+ input:checked + .seat-number{
+  background: #A5A4DD;
+  color: black;
+  border-color: black;
+}
+
 /*-----Layout (id selectors; width/height, position, flexbox, grid)-----*/
 #cinema-name {
   color: #3C3A9C;
@@ -118,6 +128,29 @@ input[type="submit"]:disabled {
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
+}
+
+.row-A,
+.row-B,
+.row-C,
+.row-D,
+.row-E {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(6, auto);
+  grid-column-gap: 1.5625em; /* 25px / 16px = 1.5625em */
+  grid-row-gap: 0.3125em; /* 5px / 16 px = 0.3125em */
+  align-items: center;
+  width: 50vw;
+}
+
+.seat-number {
+  background: #201E7C;
+  color: white;
+  border: 0.0625em solid; /* 1px / 16px = 0.0625em */
+  display: block;
+  padding: 0.625em; /* 10px / 16px = 0.625em */
+  text-align: center;
 }
 
 /*-----State (repeat the structure above; media queries, JavaScript-dependent styles)-----*/
