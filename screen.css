@@ -58,6 +58,10 @@ input[type="submit"]:disabled {
   background-color: rgba(37,128,136,0.3);
 }
 
+input[type=checkbox] {
+   display: none;
+ }
+
 /*-----Layout (id selectors; width/height, position, flexbox, grid)-----*/
 #cinema-name {
   color: #3C3A9C;
@@ -128,8 +132,8 @@ input[type="submit"]:disabled {
   display: grid;
   grid-template-columns: repeat(6, auto);
   grid-template-rows: repeat(6, auto);
-  grid-column-gap: 25px;
-  grid-row-gap: 5px;
+  grid-column-gap: 1.5625em; /* 25px / 16px = 1.5625em */
+  grid-row-gap: 0.3125em; /* 5px / 16 px = 0.3125em */
   align-items: center;
   width: 50vw;
 }
