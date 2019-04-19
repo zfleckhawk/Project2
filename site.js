@@ -67,7 +67,23 @@
 
     submit.setAttribute('disabled', 'disabled');
 
+    //clear localStorage only when form is submitted
+    submit.addEventListener('click', function() {
+      localStorage.clear();
+    });
+
+    //Import from local storage if available
+    input_email.value = localStorage.getItem("tyc_email");
+    input_cc_num.value = localStorage.getItem("tyc_cc_num");
+    input_cvv.value = localStorage.getItem("tyc_cvv");
+    input_expire.value = localStorage.getItem("tyc_expire");
+
     form.addEventListener('keyup', function() {
+      localStorage.setItem("tyc_email", input_email.value);
+      localStorage.setItem("tyc_cc_num", input_cc_num.value);
+      localStorage.setItem("tyc_cvv", input_cvv.value);
+      localStorage.setItem("tyc_expire", input_expire.value);
+
       if (validate_email(input_email.value) && validate_cc_num(input_cc_num.value) && validate_code(input_cvv.value) && validate_expire(input_expire.value)) {
         submit.removeAttribute('disabled');
         document.querySelector('#submit').style.cursor = "pointer";
