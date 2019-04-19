@@ -120,6 +120,20 @@ input[type="submit"]:disabled {
   justify-content: space-evenly;
 }
 
+.row-A,
+.row-B,
+.row-C,
+.row-D,
+.row-E {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(6, auto);
+  grid-column-gap: 25px;
+  grid-row-gap: 5px;
+  align-items: center;
+  width: 50vw;
+}
+
 /*-----State (repeat the structure above; media queries, JavaScript-dependent styles)-----*/
 @media all and (min-width: 603px) {
   #cinema-name {
