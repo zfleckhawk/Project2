@@ -58,12 +58,23 @@
   }
 
   document.addEventListener('DOMContentLoaded', function() {
+    //load in both forms
     var form = document.querySelector('#pay-form');
-    var submit = document.querySelector('#submit');
-    var input_email = document.querySelector('#email');
+    var book = document.querySelector('#form');
+
+    //Booking Portion
+    var input_location = document.querySelector('#location');
+    var input_date = document.querySelector('#date');
+    var input_time = document.querySelector('#time');
+    var input_tickets = document.querySelector('#tickets');
+    var next = document.querySelector('#next');
+
+    //Payment Portion
     var input_cc_num = document.querySelector('#credit');
     var input_cvv = document.querySelector('#code');
     var input_expire = document.querySelector('#expire');
+    var input_email = document.querySelector('#email');
+    var submit = document.querySelector('#submit');
 
     submit.setAttribute('disabled', 'disabled');
 
@@ -72,13 +83,14 @@
       localStorage.clear();
     });
 
-    //Import from local storage if available
+    //Payment Import from local storage if available
     input_email.value = localStorage.getItem("tyc_email");
     input_cc_num.value = localStorage.getItem("tyc_cc_num");
     input_cvv.value = localStorage.getItem("tyc_cvv");
     input_expire.value = localStorage.getItem("tyc_expire");
 
     form.addEventListener('keyup', function() {
+      //Insert Payment into localStorage
       localStorage.setItem("tyc_email", input_email.value);
       localStorage.setItem("tyc_cc_num", input_cc_num.value);
       localStorage.setItem("tyc_cvv", input_cvv.value);
