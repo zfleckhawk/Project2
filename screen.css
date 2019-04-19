@@ -138,6 +138,15 @@ input[type=checkbox] {
   width: 50vw;
 }
 
+.seat-number {
+  background: #201E7C;
+  color: white;
+  border: 0.0625em solid; /* 1px / 16px = 0.0625em */
+  display: block;
+  padding: 0.625em; /* 10px / 16px = 0.625em */
+  text-align: center;
+}
+
 /*-----State (repeat the structure above; media queries, JavaScript-dependent styles)-----*/
 @media all and (min-width: 603px) {
   #cinema-name {
