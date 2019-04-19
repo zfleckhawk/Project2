@@ -62,6 +62,12 @@ input[type=checkbox] {
    display: none;
  }
 
+ input:checked + .seat-number{
+  background: #A5A4DD;
+  color: black;
+  border-color: black;
+}
+
 /*-----Layout (id selectors; width/height, position, flexbox, grid)-----*/
 #cinema-name {
   color: #3C3A9C;
