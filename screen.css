@@ -42,6 +42,7 @@ select {
   border: 0;
   outline: 0;
   width: 100%;
+  cursor: pointer;
 }
 
 input[type="date"],
@@ -61,6 +62,14 @@ input[type="submit"]:disabled {
 input[type=checkbox] {
    display: none;
  }
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="submit"]:focus,
+input[type="tel"]:focus {
+  background-color:#94CED3;
+  color: black;
+}
 
  input:checked + .seat-number{
   background: #A5A4DD;
@@ -82,7 +91,6 @@ input[type=checkbox] {
   font-size: 1.6875em; /* 27px / 16px = 1.6875em */
   /* T R B L */
   padding: 0.625em 0 0.625em 0; /* 8px / 16px = 0.5em */
-
 }
 
 .movie-title {
@@ -151,6 +159,7 @@ input[type=checkbox] {
   display: block;
   padding: 0.625em; /* 10px / 16px = 0.625em */
   text-align: center;
+  cursor: pointer;
 }
 
 /*-----State (repeat the structure above; media queries, JavaScript-dependent styles)-----*/
