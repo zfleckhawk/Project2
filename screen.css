@@ -51,18 +51,18 @@ input[type="tel"],
 select {
   margin-bottom: 0.61111111em; /* 11px / 18px = 0.61111111em */
   background-color: rgba(37,128,136,1);
-  color: white
+  color: white;
+}
+
+input[type="checkbox"] {
+  display: none;
 }
 
 input[type="submit"]:disabled {
   background-color: rgba(37,128,136,0.3);
 }
 
-input[type=checkbox] {
-   display: none;
- }
-
- input:checked + .seat-number{
+input:checked + .seat-number {
   background: #A5A4DD;
   color: black;
   border-color: black;
@@ -130,11 +130,11 @@ input[type=checkbox] {
   justify-content: space-evenly;
 }
 
-.row-A,
-.row-B,
-.row-C,
-.row-D,
-.row-E {
+.row-a,
+.row-b,
+.row-c,
+.row-d,
+.row-e {
   display: grid;
   grid-template-columns: repeat(6, auto);
   grid-template-rows: repeat(6, auto);
