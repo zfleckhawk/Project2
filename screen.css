@@ -107,8 +107,9 @@ select:focus {
   color: white;
   display: inline-block;
   font-size: 1.125em;
+  /* T R B L */
   padding: 0.625em; /* 8px / 16px = 0.5em */
-  /* TO-DO: change width */
+  margin-bottom: 1em; /* 16px / 16px = 1em */
 }
 
 .pages a {
@@ -117,7 +118,6 @@ select:focus {
   display: block;
   font-size: 1.125em;
   padding: 0.625em; /* 8px / 16px = 0.5em */
-  /* TO-DO: change width */
   border: 0.25em solid #05000f; /* 2px / 16px = 0.125em */
 }
 
@@ -133,6 +133,7 @@ select:focus {
 
 .movie-poster {
   height: 50vh;
+  /* T R B L */
   padding: 1em 0 0 0;
 }
 
