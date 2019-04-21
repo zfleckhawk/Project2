@@ -66,7 +66,8 @@ input[type=checkbox] {
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="submit"]:focus,
-input[type="tel"]:focus {
+input[type="tel"]:focus,
+select:focus {
   background-color:#94CED3;
   color: black;
 }
