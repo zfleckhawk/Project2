@@ -44,41 +44,18 @@
 
   function validate_cc_num(value) {
     var cc_num = whitespace(value);
-    return validate(cc_num, /^[0-9]{16}$/g);
+    return validate(cc_num, /^[0-9]{16}$/g)
   }
 
   function validate_code(value) {
     var cvv = whitespace(value);
-    return validate(cvv, /^[0-9]{3}$/g);
+    return validate(cvv, /^[0-9]{3}$/g)
   }
 
   function validate_expire(value) {
     var date = whitespace(value);
-    return validate(date, /^[0-9]{4}$/g);
+    return validate(date, /^[0-9]{4}$/g)
   }
-
-  var prices= new Array[];
-  prices["1"]=10;
-  prices["2"]=20;
-  prices["3"]=30;
-  prices["4"]=40;
-  prices["5"]=50;
-  prices["6"]=60;
-  prices["7"]=70;
-  prices["8"]=80;
-  prices["9"]=90;
-  prices["10"]=100;
-
-  function getTotalPrice() {
-    var totalPrice = 0;
-    var theform = document.forms["form"];
-    var selectedticket = theform.elements["tickets"];
-    totalPrice = prices[selectedticket.value];
-
-    var h3obj = document.getElementById('totalprice');
-    h3obj.innerHTML = "Total: $" + totalPrice;
-  }
-
 
   document.addEventListener('DOMContentLoaded', function() {
     //load in both forms

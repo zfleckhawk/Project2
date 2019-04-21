@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -13,7 +15,7 @@ html {
   background-color: #05000f;
   color: #ffffff;
   font-size: 1.125em; /* 18px / 16px = 1.125em */
-  font-family: Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5em; /* 24px / 16px */
   padding: 0 1em; /* 16px = 1em */
 }
@@ -21,6 +23,7 @@ html {
 h1, h2, h3 {
   padding: 0 0 0 0;
   font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -42,6 +45,7 @@ select {
   border: 0;
   outline: 0;
   width: 100%;
+  cursor: pointer;
 }
 
 input[type="date"],
@@ -60,6 +64,15 @@ input[type="checkbox"] {
 
 input[type="submit"]:disabled {
   background-color: rgba(37,128,136,0.3);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="submit"]:focus,
+input[type="tel"]:focus,
+select:focus {
+  background-color:#94CED3;
+  color: black;
 }
 
 input:checked + .seat-number {
@@ -82,7 +95,6 @@ input:checked + .seat-number {
   font-size: 1.6875em; /* 27px / 16px = 1.6875em */
   /* T R B L */
   padding: 0.625em 0 0.625em 0; /* 8px / 16px = 0.5em */
-
 }
 
 .movie-title {
@@ -95,8 +107,9 @@ input:checked + .seat-number {
   color: white;
   display: inline-block;
   font-size: 1.125em;
+  /* T R B L */
   padding: 0.625em; /* 8px / 16px = 0.5em */
-  /* TO-DO: change width */
+  margin-bottom: 1em; /* 16px / 16px = 1em */
 }
 
 .pages a {
@@ -105,7 +118,6 @@ input:checked + .seat-number {
   display: block;
   font-size: 1.125em;
   padding: 0.625em; /* 8px / 16px = 0.5em */
-  /* TO-DO: change width */
   border: 0.25em solid #05000f; /* 2px / 16px = 0.125em */
 }
 
@@ -121,6 +133,7 @@ input:checked + .seat-number {
 
 .movie-poster {
   height: 50vh;
+  /* T R B L */
   padding: 1em 0 0 0;
 }
 
@@ -151,6 +164,7 @@ input:checked + .seat-number {
   display: block;
   padding: 0.625em; /* 10px / 16px = 0.625em */
   text-align: center;
+  cursor: pointer;
 }
 
 /*-----State (repeat the structure above; media queries, JavaScript-dependent styles)-----*/
