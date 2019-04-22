@@ -89,6 +89,11 @@ input:checked + .seat-number {
   padding: 0 0 0 0; /* 8px / 16px = 0.5em */
 }
 
+#totalprice {
+  margin-bottom: 1em;
+  font-size: 1.6875em; /* 27px / 16px = 1.6875em */
+}
+
 /*-----Module/Modular (class or descendent selectors; repeating specific styles)-----*/
 .section-title {
   color: #6160B6;
