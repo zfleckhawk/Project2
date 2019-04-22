@@ -57,17 +57,7 @@
     return validate(date, /^[0-9]{4}$/g);
   }
 
-  var prices= new Array[];
-  prices["1"]=10;
-  prices["2"]=20;
-  prices["3"]=30;
-  prices["4"]=40;
-  prices["5"]=50;
-  prices["6"]=60;
-  prices["7"]=70;
-  prices["8"]=80;
-  prices["9"]=90;
-  prices["10"]=100;
+  var prices = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
 
   function getTotalPrice() {
     var totalPrice = 0;
