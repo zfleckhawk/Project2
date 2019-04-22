@@ -57,30 +57,20 @@
     return validate(date, /^[0-9]{4}$/g);
   }
 
-  var prices = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
-
   function getTotalPrice() {
     var totalPrice = 0;
-    var theform = document.forms["form"];
-    var selectedticket = theform.elements["tickets"];
-    totalPrice = prices[selectedticket.value];
+    totalPrice = 10*localStorage.getItem("tyc_tickets");
 
     var h3obj = document.getElementById('totalprice');
     h3obj.innerHTML = "Total: $" + totalPrice;
   }
 
-
   document.addEventListener('DOMContentLoaded', function() {
-    //load in both forms
-    var form = document.querySelector('#pay-form');
-    var book = document.querySelector('#form');
+    //Display total prices
+    getTotalPrice();
 
-    //Booking Portion
-    var input_location = document.querySelector('#location');
-    var input_date = document.querySelector('#date');
-    var input_time = document.querySelector('#time');
-    var input_tickets = document.querySelector('#tickets');
-    var next = document.querySelector('#next');
+    //load in form
+    var form = document.querySelector('#pay-form');
 
     //Payment Portion
     var input_cc_num = document.querySelector('#credit');
